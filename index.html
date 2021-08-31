@@ -8,40 +8,48 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container"> 
-        <div class="text-header">
-            <h1>شروع به نواختن کنید </h1>
-            <div class="textarea"></div>
-        </div>
-        <div class="piano-body">
-            <div class="piano-white">
-                <div class="white-keys"></div>
-                <div class="white-keys"></div>
-                <div class="white-keys"></div>
-                <div class="white-keys"></div>
-                <div class="white-keys"></div>
-                <div class="white-keys"></div>
-                <div class="white-keys"></div>
-                <div class="white-keys"></div>
-                <div class="white-keys"></div>
-                <div class="white-keys"></div>
+    <section>
+        <div class="container"> 
+            <div class="text-header">
+                <h1>شروع به نواختن کنید </h1>
+                <div class="textarea"></div>
             </div>
-            <div class="keys-black-piano">
-                <div class="piano-black">
-                    <div class="black-keys"></div>
-                    <div class="black-keys"></div>
+            <div class="piano-body">
+                <div class="piano-white">
+                    <div data-key="65" class="white-keys key" data-note="A"></div>
+                    <div data-key="87" class="white-keys key" data-note="C#"></div>
+                    <div data-key="83" class="white-keys key" data-note="D"></div>
+                    <div data-key="69" class="white-keys key" data-note="E"></div>
+                    <div data-key="67" class="white-keys key" data-note="C"></div>
+                    <div data-key="70" class="white-keys key" data-note="F"></div>
+                    <div data-key="84" class="white-keys key" data-note="F#"></div>
+                    <div data-key="71" class="white-keys key" data-note="G"></div>
+                    <div data-key="89" class="white-keys key" data-note="G#"></div>
+                    <div data-key="72" class="white-keys key" data-note="D#"></div>
                 </div>
-                <div class="piano-black">
-                    <div class="black-keys"></div>
-                    <div class="black-keys"></div>
-                    <div class="black-keys"></div>
-                </div>
-                <div class="piano-black">
-                    <div class="black-keys"></div>
-                    <div class="black-keys"></div>
+                <div class="keys-black-piano">
+                    <div class="piano-black">
+                        <div data-key="85" class="black-keys key" data-note="A#"></div>
+                        <div data-key="74" class="black-keys key" data-note="B"></div>
+                    </div>
+                    <div class="piano-black">
+                        <div data-key="75" class="black-keys key" data-note="B"></div>
+                        <div data-key="79" class="black-keys key" data-note="C"></div>
+                        <div data-key="76" class="black-keys key" data-note="C#"></div>
+                    </div>
+                    <div class="piano-black">
+                        <div data-key="80" class="black-keys key" data-note="D"></div>
+                        <div data-key="186" class="black-keys key" data-note="D#"></div>
+                    </div>
                 </div>
             </div>
+            <audio data-key="65" src="./sound/piano-bb_A#_major.wav"></audio>
+            <audio data-key="76" src="./sound/piano-c_C#_major.wav"></audio>
+            <audio data-key="80" src="./sound/piano-d_D_major.wav"></audio>
+            <audio data-key="67" src="./sound/piano-e_E_major.wav"></audio>
+            <audio data-key="89" src="./sound/piano-g_G_major.wav"></audio>
         </div>
-    </div>
+    </section>
+    <script src="./script.js"></script>
 </body>
 </html>

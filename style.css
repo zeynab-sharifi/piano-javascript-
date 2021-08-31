@@ -52,8 +52,17 @@ body{
 }
 .text-header{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 50px 0 0;
     color: #fff;
+}
+.text-header .textarea{
+    font-size: 5rem;
+}
+.playing{
+    transform: scale(0.95);
+    border-color: #f9f9f9;
+    box-shadow: 0 0 1rem #e9e9e9;
 }
