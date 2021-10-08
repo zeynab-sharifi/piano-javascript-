@@ -14,7 +14,7 @@ window.addEventListener('keydown' ,function(e){
     audio.currentTime = 0;
     audio.play();
     
-})
+});
 
 function removeTransition(){
     this.classList.remove('playing');   
